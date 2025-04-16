@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    --red: hsl(14, 86%, 42%);
+    --green: hsl(159, 69%, 38%);
+    --rose50: hsl(20, 50%, 98%);
+    --rose100: hsl(13, 31%, 94%);
+    --rose300: hsl(14, 25%, 72%);
+    --rose400: hsl(7, 20%, 60%);
+    --rose500: hsl(12, 20%, 44%);
+    --rose900: hsl(14, 65%, 9%);
+}
+
+* {
+    font-family: 'Red Hat Text';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--rose100);
+    margin: 50px;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding: 1rem;
+}
+
+.product img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Add Button */
+.product button {
+    display: flex;
+    width: 100px;
+    border: 1px solid var(--red);
+    border-radius: 50px;
+    gap: 10px;
+    padding: 6px 10px;
+    background-color: var(--rose50);
+    transform: translate(0, -50%);
+}
+
+.product button:hover {
+    outline: 1px solid var(--red);
+}
+
+.product button img {
+    width: 15px;
+}
+
+.product button p {
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0;
+}
+/* End Add Button */
+
+/* Plus Minus Button */
+.plusminus {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    padding: 6px 10px;
+    background-color: var(--red);
+    transform: translate(0, -50%);
+}
+
+.plusminus button {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--rose50);
+    margin: auto 0;
+    padding: 0;
+    background-color: transparent;
+    transform: translate(0, 0);
+}
+
+.plusminus button:hover {
+    background-color: white;
+}
+
+.plusminus button img {
+    width: 70%;
+}
+
+.plusminus button:hover img {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(92%) saturate(7008%) hue-rotate(8deg) brightness(98%) contrast(116%);
+}
+
+.plusminus p {
+    font-size: 10px;
+    margin: 0;
+    color: var(--rose50);
+}
+/* End Plus Minus Button */
+
+.product-info {
+    width: 100%;
+}
+
+.product-info p {
+    margin: 0;
+}
+
+.product-tag {
+    font-size: 12px;
+    color: var(--rose500);
+}
+
+.product-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--rose900);
+}
+
+.product-price {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--red);
+}
+
+/* Cart Section */
+section {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border-radius: 10px;
+    background-color: var(--rose50);
+    padding: 15px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600; 
+    color: var(--red);
+}
+
+/* Empty Cart */
+.empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty p {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--rose500);
+}
+/* End Empty Cart */
+
+/* Item Added Cart */
+.added {
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-name {
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.quantity-price {
+    display: flex;
+    gap: 10px;
+}
+
+.quantity-price p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.quantity {
+    font-weight: 600;
+    color: var(--red);
+}
+
+.single-price {
+    color: var(--rose500);
+}
+
+.total-price {
+    font-weight: 600;
+    color: var(--rose500);
+}
+
+.items button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.items button img {
+    border-radius: 50%;
+    border: 1.5px solid var(--rose300);
+    padding: 1px;
+}
+
+hr {
+    width: 100%;
+}
+/* End Item Added Cart */
+
+/* Total Price, Carbon Free, Confirm Order Button */
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--rose900);
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--rose900);
+}
+
+.carbon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px 5px;
+    background-color: var(--rose100);
+}
+
+.carbon p {
+    font-size: 10px;
+    margin: 0;
+}
+
+.confirm {
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding: 5px 0;
+    font-size: 13px;
+    color: var(--rose100);
+    background-color: var(--red);
+}
+
+.confirm:hover {
+    background-color: #b30000;
+}
+/* End Total Price, Carbon Free, Confirm Order Button */
+
+.total-price,
+.carbon,
+#confirm {
+    display: none;
+}
+
+.selected {
+    outline: 2px solid var(--red);
+    outline-offset: -3px;
+}
+
+/* Order Confirmed */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  
+.order-confirmed {
+    position: absolute;
+    width: 500px;
+    height: fit-content;
+    inset: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    margin: auto;
+    border: 1px solid black;
+    background-color: white;
+    gap: 20px;
+    padding: 40px;
+}
+
+.order img {
+    width: 30px;
+}
+
+.order h5 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.order p {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--rose300);
+    margin: 0;
+}
+
+.order-item {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--rose50);
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumbnail-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.thumbnail-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px
+}
+
+.name-quantity-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quantity-price {
+    display: flex;
+}
+
+h6 {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--rose900);
+}
+
+.quantity-price p {
+    margin: 0;
+}
+
+.item-quantity {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--red);
+}
+
+.price {
+    font-size: 10px;
+    color: var(--rose500);
+}
+
+.item-price {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--rose900);
+}
+
+.order-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-total {
+    font-size: 13px;
+    color: var(--rose500);
+    margin: 0;
+}
+
+.confirmed-price {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+/* End Order Confirmed */
+
+@media (max-width:550px) {
+    body {
+        flex-direction: column;
+        margin: 10px;
+        gap: 10px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    /* Order Confirmed */
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    
+    .order-confirmed {
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        inset: 0;
+        top: 0;
+        bottom: 0.1;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        margin: auto;
+        margin-bottom: 0;
+        border: 1px solid black;
+        background-color: white;
+        gap: 20px;
+        padding: 40px;
+    }
+
+    .order img {
+        width: 30px;
+    }
+
+    .order h5 {
+        font-size: 25px;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+
+    .order p {
+        font-size: 10px;
+        font-weight: 500;
+        color: var(--rose300);
+        margin: 0;
+    }
+
+    .order-item {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: var(--rose50);
+    }
+
+    .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .thumbnail-item {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .thumbnail-item img {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px
+    }
+
+    .name-quantity-price {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .quantity-price {
+        display: flex;
+    }
+
+    h6 {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--rose900);
+    }
+
+    .quantity-price p {
+        margin: 0;
+    }
+
+    .item-quantity {
+        font-size: 10px;
+        font-weight: 600;
+        color: var(--red);
+    }
+
+    .price {
+        font-size: 10px;
+        color: var(--rose500);
+    }
+
+    .item-price {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--rose900);
+    }
+
+    .order-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .order-total {
+        font-size: 13px;
+        color: var(--rose500);
+        margin: 0;
+    }
+
+    .confirmed-price {
+        font-size: 15px;
+        font-weight: 700;
+        margin: 0;
+    }
+    /* End Order Confirmed */
+}
