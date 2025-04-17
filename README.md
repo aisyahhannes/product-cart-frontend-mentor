@@ -22,4 +22,4 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/aisyahhannes/product-cart-frontend-mentor)
-- Live Site URL: [Live site URL](https://aisyahhannes.github.io/product-cart-frontend-mento)
+- Live Site URL: [Live site URL](https://aisyahhannes.github.io/product-cart-frontend-mentor)
